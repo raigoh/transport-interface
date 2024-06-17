@@ -6,6 +6,7 @@ Welcome to the Cars Inventory Management System! This application allows you to 
 
 - [Features](#features)
 - [Getting Started](#gettingstarted)
+  - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Running the Application](#application)
 - [API Endpoints](#api-endpoints)
@@ -59,7 +60,7 @@ go mod tidy
 
 ## Running the Application
 
-1.Start the API server:
+1. Start the API server:
 
 ```bash
 cd api
@@ -82,26 +83,26 @@ go run main.go
 
 ## API Endpoints
 
-- GET /api/categories: Fetches all car categories.
-- GET /api/categories/{id}: Fetches a specific car category by ID.
-- GET /api/manufacturers: Fetches all car manufacturers.
-- GET /api/manufacturers/{id}: Fetches a specific car manufacturer by ID.
-- GET /api/models: Fetches all car models.
-- GET /api/models/{id}: Fetches a specific car model by ID.
+- **GET /api/categories**: _Fetches all car categories._
+- **GET /api/categories/{id}**: _Fetches a specific car category by ID._
+- **GET /api/manufacturers**: _Fetches all car manufacturers._
+- **GET /api/manufacturers/{id}**: _Fetches a specific car manufacturer by ID._
+- **GET /api/models**: _Fetches all car models._
+- **GET /api/models/{id}**: _Fetches a specific car model by ID._
 
 ## Middleware
 
-- LoggingMiddleware: Logs incoming requests with method, URI, remote address, and processing time.
-- RateLimitingMiddleware: Limits the number of requests from a single IP address.
-- CachingMiddleware: Caches GET responses to reduce load and improve performance.
-- WithRecovery: Recovers from panics and renders a friendly error page.
+- **LoggingMiddleware**: _Logs incoming requests with method, URI, remote address, and processing time._
+- **RateLimitingMiddleware**: _Limits the number of requests from a single IP address._
+- **CachingMiddleware**: _Caches GET responses to reduce load and improve performance._
+- **WithRecovery**: _Recovers from panics and renders a friendly error page._
 
 ## Templates
 
-- index.html: Main page that displays the list of car models and filter options.
-- car.html: Detailed view of a single car model.
-- compare.html: Comparison view for selected car models.
-- error.html: Custom error page displayed in case of server errors.
+- **index.html**: _Main page that displays the list of car models and filter options._
+- **car.html**: _Detailed view of a single car model._
+- **compare.html**: _Comparison view for selected car models._
+- **error.html**: _Custom error page displayed in case of server errors._
 
 ## Contributing
 
@@ -109,4 +110,4 @@ Contributions are welcome! If you find any issues or want to add new features, p
 
 ## Contact
 
-For questions or feedback, please contact discord Vikationu#4963.
+For questions or feedback, please contact discord _Vikationu#4963._
