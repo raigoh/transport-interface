@@ -5,10 +5,11 @@ Welcome to the Cars Inventory Management System! This application allows you to 
 ## Table of Contents
 
 - [Features](#features)
-- [Getting Started](#gettingstarted)
+- [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Running the Application](#application)
+- [Running the Application](#running-the-application)
+- [Using the Compare Feature](#using-the-compare-feature)
 - [API Endpoints](#api-endpoints)
 - [Middleware](#middleware)
 - [Templates](#templates)
@@ -80,6 +81,22 @@ go run main.go
 ```
 
 4. Open your web browser and navigate to http://localhost:8080 or make a ctrl + click on terminal to http://localhost:8080.
+
+## Using the Compare Feature:
+
+1. Accessing Compare Feature:
+
+- Navigate to the main page.
+- Clicking on the name and year box highlights it in green, indicating it's selected for comparison.
+
+2. Select Car Models:
+
+- To compare models, click on the name and year box of each car model you wish to include in the comparison.
+
+3. Initiate Comparison:
+
+- After selecting the desired car models, proceed to the bottom of the page.
+- Click the "Compare" button to initiate the comparison process.
 
 ## API Endpoints
 
