@@ -86,17 +86,17 @@ go run main.go
 
 1. Accessing Compare Feature:
 
-- Navigate to the main page.
-- Clicking on the name and year box highlights it in green, indicating it's selected for comparison.
+   - Navigate to the main page.
+   - Clicking on the name and year box highlights it in green, indicating it's selected for comparison.
 
 2. Select Car Models:
 
-- To compare models, click on the name and year box of each car model you wish to include in the comparison.
+   - To compare models, click on the name and year box of each car model you wish to include in the comparison.
 
 3. Initiate Comparison:
 
-- After selecting the desired car models, proceed to the bottom of the page.
-- Click the "Compare" button to initiate the comparison process.
+   - After selecting the desired car models, proceed to the bottom of the page.
+   - Click the "Compare" button to initiate the comparison process.
 
 ## API Endpoints
 
