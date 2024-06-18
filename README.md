@@ -70,10 +70,6 @@ make run
 
 2. Navigate to the cars directory:
 
-```bash
-cd cars
-```
-
 3. Run the application:
 
 ```bash
