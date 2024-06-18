@@ -14,9 +14,11 @@ import (
 )
 
 func main() {
+	// Serves static files from the local directory
 	fs := http.FileServer(http.Dir("./static"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 
+	// Serves image files from ./api/img under the /api/img/ route.
 	imgFS := http.FileServer(http.Dir("./api/img"))
 	http.Handle("/api/img/", http.StripPrefix("/api/img/", imgFS))
 

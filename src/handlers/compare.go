@@ -6,7 +6,19 @@ import (
 	"path/filepath"
 )
 
-// Handler for the comparison route
+// CompareHandler handles the HTTP request for the comparison route.
+// It processes a POST request containing car model IDs to compare,
+// fetches the details of each car model, and renders the comparison template.
+// If any error occurs during the process, it responds with the appropriate HTTP error status and message.
+//
+// Parameters:
+//   - w (http.ResponseWriter): The response writer to send the HTTP response.
+//   - r (*http.Request): The HTTP request containing the car model IDs in the form data.
+//
+// The request should be a POST request with form data containing 'compare' parameters,
+// where each parameter value is the ID of a car model to compare.
+// The handler fetches details for each car model ID and renders a comparison page.
+
 func CompareHandler(w http.ResponseWriter, r *http.Request) {
 	// Simulate an intentional error to test error handling
 	// panic("intentional error for testing")

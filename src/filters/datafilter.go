@@ -2,6 +2,14 @@ package filters
 
 import "cars/src/data"
 
+// FetchFilterData retrieves filter data for car models from the API.
+// It fetches manufacturers, car models, and categories, then extracts unique years from the car models.
+// The function returns a FilterData struct containing lists of manufacturer names, years, and category names.
+//
+// Returns:
+//   - (data.FilterData, error): A FilterData struct and an error.
+//     If any of the API requests fail, the error will be non-nil.
+
 func FetchFilterData() (data.FilterData, error) {
 	manufacturers, err := data.FetchManufacturers()
 	if err != nil {

@@ -32,6 +32,7 @@ type CarModel struct {
 	CategoryDetails     Category     `json:"categoryDetails"`
 }
 
+// FilterData represents the data used for filtering car models in the application.
 type FilterData struct {
 	Manufacturers []string
 	Years         []int

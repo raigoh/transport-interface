@@ -6,7 +6,18 @@ import (
 	"path/filepath"
 )
 
-// Handler for the car details route
+// CarHandler handles the HTTP request for the car details route.
+// It extracts the car model ID from the URL, fetches the car model details,
+// and renders the car details template. If any error occurs, it responds with
+// the appropriate HTTP error status and message.
+//
+// Parameters:
+//   - w (http.ResponseWriter): The response writer to send the HTTP response.
+//   - r (*http.Request): The HTTP request.
+//
+// The URL should be in the format: /car/{id}
+// Where {id} is the ID of the car model to retrieve.
+
 func CarHandler(w http.ResponseWriter, r *http.Request) {
 	// Simulate an intentional error to test error handling
 	// panic("intentional error for testing")

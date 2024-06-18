@@ -6,6 +6,20 @@ import (
 	"strings"
 )
 
+// FetchModelsFiltered retrieves car models from the API and filters them based on provided criteria.
+// It applies filters for manufacturer, year range, category, and a search query on the model name.
+//
+// Parameters:
+//   - manufacturer (string): The name of the manufacturer to filter by.
+//   - minYear (string): The minimum year to filter by.
+//   - maxYear (string): The maximum year to filter by.
+//   - category (string): The ID of the category to filter by.
+//   - searchQuery (string): The search query to filter models by name.
+//
+// Returns:
+//   - ([]data.CarModel, error): A slice of CarModel structs that match the filters and an error.
+//     If any of the API requests or conversions fail, the error will be non-nil.
+
 func FetchModelsFiltered(manufacturer, minYear, maxYear, category, searchQuery string) ([]data.CarModel, error) {
 	models, err := data.FetchModels()
 	if err != nil {

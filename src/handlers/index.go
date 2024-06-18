@@ -7,7 +7,21 @@ import (
 	"path/filepath"
 )
 
-// Handler for the index route
+// IndexHandler handles the HTTP requests for the index route.
+// It serves both GET and POST requests for the index page.
+// For GET requests, it fetches all car models, categories, manufacturers,
+// and filter data to render the index template.
+// For POST requests, it processes form data (manufacturer, category, min/max year, search query)
+// to filter car models using the FetchModelsFiltered function from the filters package,
+// and then renders the index template with filtered data.
+// It responds with appropriate HTTP error statuses if any error occurs during the process.
+//
+// Parameters:
+//   - w (http.ResponseWriter): The response writer to send the HTTP response.
+//   - r (*http.Request): The HTTP request.
+//
+// This handler serves the index page with car models and filter options.
+
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
 	// Simulate an intentional error to test error handling
 	// panic("intentional error for testing")
