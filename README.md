@@ -1,6 +1,6 @@
-# Cars Inventory Management System
+# Transport Inventory Management System
 
-Welcome to the Cars Inventory Management System! This application allows you to manage and view car models, manufacturers, and categories. It also provides functionalities for filtering and comparing different car models.
+Welcome to the Transport Inventory Management System! This application allows you to manage and view car models, manufacturers, and categories. It also provides functionalities for filtering and comparing different car models.
 
 ## Table of Contents
 
@@ -49,8 +49,8 @@ Welcome to the Cars Inventory Management System! This application allows you to 
 1. Clone the repository:
 
 ```bash
-git clone https://gitea.koodsisu.fi/raigohoim/cars.git
-cd cars
+git clone https://github.com/raigoh/transport-interface.git
+cd transport-interface
 ```
 
 2. Install dependencies:
